@@ -1,9 +1,10 @@
 import React from 'react';
+import FooterSection from '../components/FooterComponent/FooterSection';
 
 const Footer = () => {
     return (
         <div>
-            Footer Section
+            <FooterSection></FooterSection>
         </div>
     );
 };

@@ -1,9 +1,10 @@
 import React from 'react';
+import Navbar from '../components/HeaderComponent/Navbar';
 
 const Header = () => {
     return (
-        <div>
-            header section
+        <div className='bg-gray-50'>
+            <Navbar />
         </div>
     );
 };
