@@ -1,0 +1,116 @@
+{
+    "news": [
+        {
+            "title": "Technology News - Title 4",
+            "source": "Tech Gazette",
+            "date": "2024-03-03",
+            "category": "Technology",
+            "content": "Details about the technology news article 4.",
+            "author": "Robert Techson",
+            "location": "Tech City, Techland",
+            "image": {
+                "url": "https://example.com/tech-image-4.jpg",
+                "caption": "Caption for the technology news image 4"
+            },
+            "news_details": {
+                "summary": "A concise summary of the technology news 4.",
+                "analysis": "In-depth analysis of the technology news 4. Quisque sit amet sapien vel lorem bibendum rhoncus vitae et felis.",
+                "related_articles": [
+                    {
+                        "title": "Related Article 7",
+                        "url": "https://techgazette.com/related-article-7"
+                    },
+                    {
+                        "title": "Related Article 8",
+                        "url": "https://techgazette.com/related-article-8"
+                    }
+                ]
+            },
+            "news_type": "Tech Update"
+        },
+        {
+            "title": "Entertainment News - Title 5",
+            "source": "Showbiz Express",
+            "date": "2024-03-04",
+            "category": "Entertainment",
+            "content": "Details about the entertainment news article 5.",
+            "author": "Emma Starlet",
+            "location": "Hollywood, USA",
+            "image": {
+                "url": "https://example.com/entertainment-image-5.jpg",
+                "caption": "Caption for the entertainment news image 5"
+            },
+            "news_details": {
+                "summary": "A concise summary of the entertainment news 5.",
+                "analysis": "In-depth analysis of the entertainment news 5. Fusce quis nulla sed ipsum feugiat hendrerit.",
+                "related_articles": [
+                    {
+                        "title": "Related Article 9",
+                        "url": "https://showbizexpress.com/related-article-9"
+                    },
+                    {
+                        "title": "Related Article 10",
+                        "url": "https://showbizexpress.com/related-article-10"
+                    }
+                ]
+            },
+            "news_type": "Celebrity Spotlight"
+        },
+        {
+            "title": "Entertainment News - Title 5",
+            "source": "Showbiz Express",
+            "date": "2024-03-04",
+            "category": "Entertainment",
+            "content": "Details about the entertainment news article 5.",
+            "author": "Emma Starlet",
+            "location": "Hollywood, USA",
+            "image": {
+                "url": "https://example.com/entertainment-image-5.jpg",
+                "caption": "Caption for the entertainment news image 5"
+            },
+            "news_details": {
+                "summary": "A concise summary of the entertainment news 5.",
+                "analysis": "In-depth analysis of the entertainment news 5. Fusce quis nulla sed ipsum feugiat hendrerit.",
+                "related_articles": [
+                    {
+                        "title": "Related Article 9",
+                        "url": "https://showbizexpress.com/related-article-9"
+                    },
+                    {
+                        "title": "Related Article 10",
+                        "url": "https://showbizexpress.com/related-article-10"
+                    }
+                ]
+            },
+            "news_type": "Celebrity Spotlight"
+        },
+        {
+            "title": "Health News - Title 6",
+            "source": "Wellness Today",
+            "date": "2024-03-05",
+            "category": "Health",
+            "content": "Details about the health news article 6.",
+            "author": "Dr. Healthwise",
+            "location": "Healthy Town, Fitland",
+            "image": {
+                "url": "https://example.com/health-image-6.jpg",
+                "caption": "Caption for the health news image 6"
+            },
+            "news_details": {
+                "summary": "A concise summary of the health news 6.",
+                "analysis": "In-depth analysis of the health news 6. Curabitur scelerisque efficitur odio eu vestibulum.",
+                "related_articles": [
+                    {
+                        "title": "Related Article 11",
+                        "url": "https://wellnesstoday.com/related-article-11"
+                    },
+                    {
+                        "title": "Related Article 12",
+                        "url": "https://wellnesstoday.com/related-article-12"
+                    }
+                ]
+            },
+            "news_type": "Wellness Update"
+        }
+    ]
+}

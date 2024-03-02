@@ -1,0 +1,26 @@
+[
+    {
+        "bloggerName": "John Doe",
+        "bloggerImage": "https://example.com/john-doe-profile.jpg",
+        "bloggerGmail": "john.doe@gmail.com",
+        "blogTitle": "Exploring React Hooks",
+        "blogImage": "https://example.com/react-hooks-blog-image.jpg",
+        "blogDescription": "In this blog post, we dive into the world of React Hooks and explore how they simplify state management and side effects in React applications."
+    },
+    {
+        "bloggerName": "Jane Smith",
+        "bloggerImage": "https://example.com/jane-smith-profile.jpg",
+        "bloggerGmail": "jane.smith@gmail.com",
+        "blogTitle": "Getting Started with Node.js",
+        "blogImage": "https://example.com/nodejs-blog-image.jpg",
+        "blogDescription": "A beginner-friendly guide to Node.js. Learn how to set up Node.js, create a simple server, and build your first web application."
+    },
+    {
+        "bloggerName": "Alex Johnson",
+        "bloggerImage": "https://example.com/alex-johnson-profile.jpg",
+        "bloggerGmail": "alex.johnson@gmail.com",
+        "blogTitle": "Mastering CSS Flexbox",
+        "blogImage": "https://example.com/css-flexbox-blog-image.jpg",
+        "blogDescription": "Unlock the power of CSS Flexbox. This comprehensive guide covers everything from the basics to advanced layout techniques for modern web design."
+    }
+]

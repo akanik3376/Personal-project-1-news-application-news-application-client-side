@@ -1,28 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import LoginWithSocial from '../Shared/LoginWithSocial';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
+    const [isShowPassword, setIsShowPassword] = useState(false);
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
+
+    const handleCheckboxChange = () => {
+        setIsShowPassword(!isShowPassword);
+    };
 
     const onSubmit = (data) => {
         // Handle your form submission here
         console.log(data);
-        reset()
+        reset();
     };
 
     return (
-
-
-        <div className="bg-slate-100 ">
-            <h1 className="text-4xl text-center font-semibold pt-5  text-indigo-700">Please SingUp!</h1>
-            <form onSubmit={handleSubmit(onSubmit)} className="w-full md:w-1/2 mx-auto  p-6  rounded-md shadow-md">
+        <div className="bg-slate-100">
+            <h1 className="text-4xl text-center font-semibold pt-5 text-indigo-700">Please SignUp!</h1>
+            <form onSubmit={handleSubmit(onSubmit)} className="w-full md:w-1/2 mx-auto p-6 rounded-md shadow-md">
                 <div className="mb-6">
                     <label className="block text-gray-700 text-sm font-bold mb-2">First Name:</label>
                     <input
                         {...register("firstName", { required: 'First Name is required' })}
                         className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Enter your first name"
                     />
                     {errors.firstName && <p className="text-red-500 text-sm mt-1">{errors.firstName.message}</p>}
                 </div>
@@ -31,6 +35,7 @@ const Register = () => {
                     <input
                         {...register("lastName", { required: 'Last Name is required' })}
                         className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Enter your last name"
                     />
                     {errors.lastName && <p className="text-red-500 text-sm mt-1">{errors.lastName.message}</p>}
                 </div>
@@ -39,6 +44,7 @@ const Register = () => {
                     <select
                         {...register("gender", { required: 'Gender is required' })}
                         className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Select Gender"
                     >
                         <option value="">Select Gender</option>
                         <option value="male">Male</option>
@@ -61,6 +67,7 @@ const Register = () => {
                         type="date"
                         {...register("birthdate", { required: 'Birthdate is required' })}
                         className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Select your birthdate"
                     />
                     {errors.birthdate && <p className="text-red-500 text-sm mt-1">{errors.birthdate.message}</p>}
                 </div>
@@ -70,28 +77,37 @@ const Register = () => {
                         type="email"
                         {...register("email", { required: 'Email is required', pattern: /^\S+@\S+$/i })}
                         className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Enter your email"
                     />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
                 </div>
                 <div className="mb-6">
                     <label className="block text-gray-700 text-sm font-bold mb-2">Password:</label>
                     <input
-                        type="password"
+                        type={isShowPassword ? "text" : "password"}
                         {...register("password", { required: 'Password is required' })}
                         className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                        placeholder="Enter your password"
                     />
+                    <label>
+                        <input
+                            type="checkbox"
+                            checked={isShowPassword}
+                            onChange={handleCheckboxChange}
+                            className='mr-1'
+                        />
+                        Show Password
+                    </label>
                     {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password.message}</p>}
                 </div>
                 <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800 w-full">
-                    SingUp
+                    SignUp
                 </button>
             </form>
 
             <LoginWithSocial />
-            <p className='text-center mt-5 pb-10 text-xl'>Already Have an account? please <Link to='/login'><span className='text-purple-700  border-b-2 border-purple-700'>Login</span></Link></p>
+            <p className='text-center mt-5 pb-10 text-xl'>Already Have an account? please <Link to='/login'><span className='text-purple-700 border-b-2 border-purple-700'>Login</span></Link></p>
         </div>
-
-
     );
 };
 

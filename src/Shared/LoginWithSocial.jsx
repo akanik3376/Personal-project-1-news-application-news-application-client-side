@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 const LoginWithSocial = () => {
     return (
         <div className='mt-4'>
-            <h1 className="text-2xl text-center font-semibold">Login With</h1>
+            <h1 className="text-2xl text-center font-semibold text-indigo-700">Login With</h1>
             <div className='flex flex-col md:flex-row justify-around w-2/3 mx-auto font-semibold text-white text-xl'>
                 <button className="border-2 flex items-center mt-4 px-4 gap-2 btn btn-outline">
                     Google<FcGoogle />
