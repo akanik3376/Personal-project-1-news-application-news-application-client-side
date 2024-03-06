@@ -2,18 +2,44 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import LoginWithSocial from '../Shared/LoginWithSocial';
 import { Link } from 'react-router-dom';
+import useAuth from '../Hooks/useAuth';
+import Swal from 'sweetalert2';
 
 const Register = () => {
     const [isShowPassword, setIsShowPassword] = useState(false);
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-
+    const { createUser } = useAuth()
     const handleCheckboxChange = () => {
         setIsShowPassword(!isShowPassword);
     };
 
     const onSubmit = (data) => {
-        // Handle your form submission here
-        console.log(data);
+        const email = data?.email
+        const password = data?.password
+
+        //create user hare
+        createUser(email, password)
+            .then(res => {
+                if (res) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Login Successful!',
+                        showConfirmButton: false,
+                        timer: 1500,
+                    });
+                }
+
+            })
+            .catch(err => {
+                if (err) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Login Failed',
+                        text: 'Invalid email or password',
+                    });
+                }
+            })
+
         reset();
     };
 

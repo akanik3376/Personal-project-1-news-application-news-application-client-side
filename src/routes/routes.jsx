@@ -5,6 +5,9 @@ import Home from '../pages/Home';
 import Blog from '../pages/Blog';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
+import AllNews from '../pages/AllNews';
+import Dashboard from '../pages/Dashboard/Dashboard';
+import AdminHom from '../pages/Dashboard/Admin/AdminHom';
 
 
 const routes = createBrowserRouter([
@@ -19,7 +22,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/news',
-                element: <Home />
+                element: <AllNews />
             },
             {
                 path: '/blog',
@@ -35,6 +38,21 @@ const routes = createBrowserRouter([
     {
         path: '/register',
         element: <Register />
+    },
+    {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
+            // admin roots
+            {
+                path: 'admin-home',
+                element: <AdminHom />
+            },
+
+            // Survey role
+
+
+        ]
     },
 ])
 

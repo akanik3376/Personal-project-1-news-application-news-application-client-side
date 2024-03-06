@@ -22,5 +22,13 @@
         "blogTitle": "Mastering CSS Flexbox",
         "blogImage": "https://example.com/css-flexbox-blog-image.jpg",
         "blogDescription": "Unlock the power of CSS Flexbox. This comprehensive guide covers everything from the basics to advanced layout techniques for modern web design."
+    },
+    {
+        "bloggerName": "Alex Johnson",
+        "bloggerImage": "https://example.com/alex-johnson-profile.jpg",
+        "bloggerGmail": "alex.johnson@gmail.com",
+        "blogTitle": "Mastering CSS Flexbox",
+        "blogImage": "https://example.com/css-flexbox-blog-image.jpg",
+        "blogDescription": "Unlock the power of CSS Flexbox. This comprehensive guide covers everything from the basics to advanced layout techniques for modern web design."
     }
 ]

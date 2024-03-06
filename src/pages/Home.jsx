@@ -2,7 +2,6 @@ import React from 'react';
 import Banner from '../components/HeaderComponent/Banner';
 import image from "../assets/images/banner.jpg"
 import LatestNews from '../components/home/LatestNews';
-import HomeCompOne from '../components/home/HomeCompOne';
 import LatestBlog from '../components/home/LatestBlog';
 const Home = () => {
     return (
@@ -14,7 +13,7 @@ const Home = () => {
                 button="Explore More"></Banner>
 
             <LatestNews />
-            <HomeCompOne />
+
             <LatestBlog />
         </>
 
